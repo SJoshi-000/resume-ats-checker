@@ -19,6 +19,11 @@ app.get("/api/health", (_req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
 });
 
+
+app.get("/", (req, res) => {
+  res.send("Resume ATS Checker Backend is running 🚀🚀🚀. Use /api/analyze for API requests.")
+})
+
 // ── Global error handler ──
 app.use((err, _req, res, _next) => {
   console.error("Error:", err.message);
