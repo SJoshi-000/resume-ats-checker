@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "/api",
+  baseURL: "https://resume-ats-checker-a7p1.onrender.com/api",
   timeout: 30000,
 });
 
